@@ -17,7 +17,7 @@
        </settings>
 
        <typeAliases>
-              <typeAlias alias="User" type="com.zeusjava.kernel.entity.User" />
+              <typeAlias alias="User" type="cn.z.jiutian.entity.User" />
        </typeAliases>
 
 

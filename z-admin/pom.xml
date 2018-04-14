@@ -61,6 +61,17 @@
       <version>${spring-framework.version}</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${spring-framework.version}</version>
+    </dependency>
+    
+    <dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.4</version>
+	</dependency>
 
     <!-- Logging with SLF4J & Log4j -->
     <dependency>
@@ -117,12 +128,12 @@
       <version>2.4.3</version>
     </dependency>
     <!--Test-->
+    
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>${junit.version}</version>
-      <scope>test</scope>
-    </dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>fastjson</artifactId>
+    <version>1.2.32</version>
+</dependency>
   </dependencies>
 
   <profiles>
