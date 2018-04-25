@@ -18,7 +18,7 @@ public class ValidateObserver extends ObserverAStr{
     
     @Override
     public void update(Observable o, Object arg) {
-        
+        execute();
     }
 
     protected void execute(){
