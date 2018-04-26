@@ -53,4 +53,5 @@
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
 	</bean>
 
+    <import resource="classpath:spring/z-activemq.xml"/>
 </beans>
