@@ -13,8 +13,8 @@ public class C extends Chain<OrderVo>{
     protected void next(OrderVo condition) {
         LOG.info("------C-------");
         
-        if(getNext() != null){
-            getNext().next(condition);
-        }
+//        if(getNext() != null){
+//            getNext().next(condition);
+//        }
     }
 }
