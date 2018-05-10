@@ -1,4 +1,4 @@
-package cn.z.jiutian.activemq;
+/*package cn.z.jiutian.activemq;
 
 import javax.annotation.Resource;
 import javax.jms.Destination;
@@ -6,7 +6,7 @@ import javax.jms.Destination;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-
+//
 @Service
 public class TextPush extends MessageSender{
 
@@ -28,3 +28,4 @@ public class TextPush extends MessageSender{
         } 
 
 }
+*/

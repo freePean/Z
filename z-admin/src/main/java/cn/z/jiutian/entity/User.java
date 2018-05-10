@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class User implements Serializable{
     private static final long serialVersionUID = 1L;
-    private Integer id;
+    private Long id;
     private String userName;
     private String password;
 
-    public User(Integer id, String userName, String password) {
+    public User(Long id, String userName, String password) {
         this.id = id;
         this.userName = userName;
         this.password = password;
@@ -19,11 +19,12 @@ public class User implements Serializable{
         this.password = password;
     }
 
-    public User() {
+    public Long getId() {
+        return id;
     }
 
-    public Integer getId() {
-        return id;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getUserName() {
@@ -32,10 +33,6 @@ public class User implements Serializable{
 
     public String getPassword() {
         return password;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public void setUserName(String userName) {
