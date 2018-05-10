@@ -17,11 +17,11 @@ public class B extends Chain<OrderVo> {
     protected void next(OrderVo condition) {
         LOG.info("------------B------------");
         
-        c.next(condition);
+        //c.next(condition);
         
-        /*if(getNext() != null ){
+        if(getNext() != null ){
             getNext().next(condition);
-        }*/
+        }
     }
     
 

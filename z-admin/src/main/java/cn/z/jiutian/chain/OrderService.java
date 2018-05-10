@@ -9,14 +9,16 @@ public class OrderService {
     @Autowired
     private Chain<OrderVo> a;
     
-//    @Autowired
-//    private Chain<OrderVo> b;
-//    
-//    @Autowired
-//    private Chain<OrderVo> c;
+    @Autowired
+    private Chain<OrderVo> b;
+    
+    @Autowired
+    private Chain<OrderVo> c;
     
     public void execute(){
         OrderVo oo = new OrderVo();
+        a.setNext(b);
+        b.setNext(c);
         a.next(oo);
     }
 

@@ -16,9 +16,9 @@ public class A extends Chain<OrderVo>{
     protected void next(OrderVo condition) {
         LOG.info("-------------A----------------");
         
-        b.next(condition);
-        /*if(getNext() != null ){
-            getNext().next(condition);;
-        }*/
+        //b.next(condition);
+        if(getNext() != null ){
+            getNext().next(condition);
+        }
     }
 }
