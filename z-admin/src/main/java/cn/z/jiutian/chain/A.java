@@ -10,9 +10,9 @@ public class A extends Chain<OrderVo>{
 
     private static final Logger LOG = LoggerFactory.getLogger(A.class);
     
-    @Autowired
-    private Chain<OrderVo> b;
-    
+    /*
+     * 任务链模式测试类
+     */
     protected void next(OrderVo condition) {
         LOG.info("-------------A----------------");
         

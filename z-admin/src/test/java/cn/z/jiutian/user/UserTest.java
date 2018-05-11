@@ -32,4 +32,15 @@ public class UserTest extends BaseTest{
             System.out.println(JSON.toJSON(user));
         }
     }
+    
+    private void execute(String... args){
+        for (String str : args) {
+            System.out.println(str);
+        }
+    }
+    
+    @Test
+    public void testExecute(){
+        execute("大名","小名","吼吼");
+    }
 }

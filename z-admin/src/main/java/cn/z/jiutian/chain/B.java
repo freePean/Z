@@ -10,8 +10,6 @@ public class B extends Chain<OrderVo> {
 
     private static final Logger LOG = LoggerFactory.getLogger(B.class);
     
-    @Autowired
-    private Chain<OrderVo> c;
     
     @Override
     protected void next(OrderVo condition) {
