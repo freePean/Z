@@ -1,7 +1,9 @@
 package cn.z.jiutian.lambda;
 
 import org.testng.annotations.Test;
-
+/*
+ * http://www.importnew.com/16436.html
+ */
 public class ThreadTest {
 
     @Test

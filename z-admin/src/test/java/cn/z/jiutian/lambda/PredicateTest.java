@@ -44,4 +44,5 @@ public class PredicateTest {
             System.out.println(name + " ");
         });
     }
+    
 }
