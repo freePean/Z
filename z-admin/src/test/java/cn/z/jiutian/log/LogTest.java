@@ -1,0 +1,50 @@
+package cn.z.jiutian.log;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.Test;
+
+import com.alibaba.fastjson.JSON;
+
+import cn.z.jiutian.BaseTest;
+
+public class LogTest extends BaseTest{
+
+    private static final Logger LOG = LoggerFactory.getLogger(LogTest.class);
+    
+    @Test
+    public void logTest() {
+        User u = new User();
+        u.setName("joy");
+        u.setEmail("1234@163.com");
+        u.setAddress("北京朝阳");
+        
+        LOG.info("u{}", JSON.toJSON(u));
+    }
+
+    class User{
+        private String name;
+        private String address;
+        private String email;
+        
+        public String getName() {
+            return name;
+        }
+        public void setName(String name) {
+            this.name = name;
+        }
+        public String getAddress() {
+            return address;
+        }
+        public void setAddress(String address) {
+            this.address = address;
+        }
+        public String getEmail() {
+            return email;
+        }
+        public void setEmail(String email) {
+            this.email = email;
+        }
+        
+    }
+}
