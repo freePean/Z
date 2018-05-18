@@ -36,5 +36,9 @@ public class Test_client_http {
         cpsResponse cp = (cpsResponse) obj;
         System.out.println(JSON.toJSON(cp));
     }  
+    
+    public void testUrl(){
+        System.out.println();
+    }
   
 }

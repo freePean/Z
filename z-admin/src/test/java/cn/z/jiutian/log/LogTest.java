@@ -1,10 +1,11 @@
 package cn.z.jiutian.log;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
-
-import com.alibaba.fastjson.JSON;
 
 import cn.z.jiutian.BaseTest;
 
@@ -19,9 +20,11 @@ public class LogTest extends BaseTest{
         u.setEmail("1234@163.com");
         u.setAddress("北京朝阳");
         
-        LOG.info("u{}", JSON.toJSON(u));
+        LOG.info("u[{}]", u);
     }
 
+    
+    
     class User{
         private String name;
         private String address;
