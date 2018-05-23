@@ -3,6 +3,7 @@ package cn.z.jiutian.log;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
@@ -49,5 +50,20 @@ public class LogTest extends BaseTest{
             this.email = email;
         }
         
+    }
+    
+    public static void main(String[] args) {
+        
+        String i = null;
+        
+        System.out.println();
+        
+//        if(i == null || i == ""){
+//            System.out.println("------------");
+//        }
+        
+        if(i.equals(null) || i.equals("")){
+            System.out.println("---------------");
+        }
     }
 }
