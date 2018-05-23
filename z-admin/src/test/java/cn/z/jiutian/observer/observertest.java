@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
 import cn.z.jiutian.BaseTest;
+import cn.z.jiutian.Abserver.RequestParam;
 import cn.z.jiutian.Abserver.router;
 
 public class observertest extends BaseTest{
@@ -16,6 +17,9 @@ public class observertest extends BaseTest{
      */
     @Test
     public void testValiate(){
+    	RequestParam param = new RequestParam();
+    	param.setType("pwd");
+    	
         router.execute();
     }
 

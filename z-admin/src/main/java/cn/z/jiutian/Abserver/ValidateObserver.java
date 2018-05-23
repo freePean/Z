@@ -6,7 +6,7 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class ValidateObserver extends ObserverAStr{
+public abstract class ValidateObserver extends ObserverAStr implements Support<RequestParam>{
 
     @Autowired
     private router router;
@@ -18,6 +18,7 @@ public class ValidateObserver extends ObserverAStr{
     
     @Override
     public void update(Observable o, Object arg) {
+    	
         execute();
     }
 
