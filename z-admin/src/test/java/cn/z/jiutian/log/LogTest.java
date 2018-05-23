@@ -61,9 +61,9 @@ public class LogTest extends BaseTest{
 //        if(i == null || i == ""){
 //            System.out.println("------------");
 //        }
-        
-        if(i.equals(null) || i.equals("")){
-            System.out.println("---------------");
-        }
+        System.out.println("a".hashCode());
+//        if(i.equals(null) || i.equals("")){
+//            System.out.println("---------------");
+//        }
     }
 }
