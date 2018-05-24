@@ -6,23 +6,26 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public abstract class ValidateObserver extends ObserverAStr implements Support<RequestParam>{
+public abstract class ValidateObserver extends ObserverAStr<RequestParam> {
 
     @Autowired
-    private router router;
+    private ValidateRouter validateRouter;
     
     @PostConstruct
     public void init(){
-        this.router.addObserver(this);
+        validateRouter.addObserver(this);
     }
     
     @Override
     public void update(Observable o, Object arg) {
-    	
-        execute();
+    	RequestParam param = (RequestParam) arg;
+    	if(!supports(param)){
+    	    return ;
+    	}
+        execute(param);
     }
 
-    protected void execute(){
+    protected void execute(RequestParam param){
         System.out.println("validateobserver===================");
         
     }

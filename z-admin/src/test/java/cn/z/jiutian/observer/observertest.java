@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 
 import cn.z.jiutian.BaseTest;
 import cn.z.jiutian.Abserver.RequestParam;
-import cn.z.jiutian.Abserver.router;
+import cn.z.jiutian.Abserver.ValidateServiceImpl;
 
 public class observertest extends BaseTest{
 
     @Autowired
-    private router router;
+    private ValidateServiceImpl validateServiceImpl;
     
     /*
      * 观察者模式测试类
@@ -20,7 +20,7 @@ public class observertest extends BaseTest{
     	RequestParam param = new RequestParam();
     	param.setType("pwd");
     	
-        router.execute();
+        validateServiceImpl.execute(param);
     }
 
 }

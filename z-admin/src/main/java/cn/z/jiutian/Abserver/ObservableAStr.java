@@ -3,11 +3,15 @@ package cn.z.jiutian.Abserver;
 import java.util.Observable;
 
 
-public abstract class ObservableAStr extends Observable{
+public abstract class ObservableAStr<P> extends Observable{
 
 
-    public void execute(){
+    public void execute(P p) {
         setChanged();
-        notifyObservers();
+        notifyObservers(p);
+    }
+
+    public void execute() {
+        execute(null);
     }
 }

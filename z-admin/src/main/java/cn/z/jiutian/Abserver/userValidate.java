@@ -1,19 +1,23 @@
 package cn.z.jiutian.Abserver;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
 public class userValidate extends ValidateObserver{
 
+    private static final Logger LOG = LoggerFactory.getLogger(userValidate.class);
+    
 	@Override
-	public boolean spport(RequestParam t) {
+	public boolean supports(RequestParam t) {
 		// TODO Auto-generated method stub
-		return t.equals("user");
+		return t.getType().equals("user");
 	}
 	
     @Override
-    protected void execute() {
-        System.out.println("userValidate================");
+    protected void execute(RequestParam param) {
+        LOG.info("userValidate's type is {}", param.getType());
     }
 
 }
