@@ -13,6 +13,7 @@ public class UUIDTest extends BaseTest{
 
     private static final Logger LOG = LoggerFactory.getLogger(UUIDTest.class);
     
+    
     @Test
     public void uuidTest(){
         UUID uuid = UUID.randomUUID();

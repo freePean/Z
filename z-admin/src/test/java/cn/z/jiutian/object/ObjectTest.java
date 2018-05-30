@@ -10,6 +10,7 @@ public class ObjectTest extends BaseTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(ObjectTest.class);
     
+    
     public static void main(String[] args) throws Exception{
 //        Object obj = Array.newInstance(String.class, 10);
 //        Array.set(obj, 0, "hello");
