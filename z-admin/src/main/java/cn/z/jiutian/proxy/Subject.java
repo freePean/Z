@@ -3,6 +3,8 @@ package cn.z.jiutian.proxy;
 
 public interface Subject {
 
-    void doSomething();
+    void read();
 
+    void write();
+    
 }

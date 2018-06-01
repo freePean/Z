@@ -13,7 +13,7 @@ public class ProxyTest extends BaseTest{
     @Test
     public void staticProxyTest(){
         Subject sub = new SubjectProxy();
-        sub.doSomething();
+        sub.read();
     }
     
     @Test
@@ -21,6 +21,6 @@ public class ProxyTest extends BaseTest{
         ProxyHandler proxy = new ProxyHandler();
        //绑定该类实现的所有接口
         Subject sub = (Subject) proxy.bind(new RealSubject());
-        sub.doSomething();
+        sub.read();
     }
 }

@@ -5,9 +5,16 @@ public class SubjectProxy implements Subject {
 
     Subject subimp = new RealSubject();
     
-    public void doSomething(){
-        subimp.doSomething();
+    @Override
+    public void read() {
+        // TODO Auto-generated method stub
+        subimp.read();
     }
     
+    @Override
+    public void write() {
+        // TODO Auto-generated method stub
+        subimp.write();
+    }
 
 }
