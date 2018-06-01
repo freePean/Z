@@ -11,23 +11,16 @@ public class ProxyTest extends BaseTest{
     private static final Logger LOG = LoggerFactory.getLogger(ProxyTest.class);
     
     @Test
-    public void dbQueryProxyTest(){
-        IDBQuery q = new DBQueryProxy();
-        String reqStr = q.request();
-        LOG.info("reqStr is {}", reqStr);
-    }
-
-    @Test
-    public void cglibTest(){
-        BookProxyLib cglib = new BookProxyLib();
-        BookProxyImpl bookCglib = (BookProxyImpl) cglib.getInstance(new BookProxyImpl());
-        bookCglib.addBook();
+    public void staticProxyTest(){
+        Subject sub = new SubjectProxy();
+        sub.doSomething();
     }
     
     @Test
-    public void javaCgligProxyTest(){
-        IDBQuery dbQuery = DBQueryHandler.createProxy();
-        String str = dbQuery.request();
-        LOG.info(str);
+    public void cglibProxyTest(){
+        ProxyHandler proxy = new ProxyHandler();
+       //绑定该类实现的所有接口
+        Subject sub = (Subject) proxy.bind(new RealSubject());
+        sub.doSomething();
     }
 }
