@@ -13,6 +13,14 @@ public class TryTest extends BaseTest{
     @Test
     public void tryTest(){
         try {
+            try {
+                String[] arrs = new String[]{"123","24"};
+                LOG.info(arrs[1]);
+            } catch (Exception e) {
+                LOG.info("死亡医生");
+                e.printStackTrace();
+            }
+            
             String[] arrs = new String[]{"123","24"};
             LOG.info(arrs[2]);
         } catch (Exception e) {
