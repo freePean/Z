@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import cn.z.jiutian.BaseTest;
 
-public class ObjectTest extends BaseTest {
+public class ObjectTest<T> extends BaseTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(ObjectTest.class);
     
@@ -34,4 +34,35 @@ public class ObjectTest extends BaseTest {
         LOG.info("name is {}", p.getName());
     }
 
+    @Test
+    public void testObjectToClass() throws ClassNotFoundException{
+        Person p = new Person();
+        Object obj = p;
+        
+//        LOG.info("obj is {}", JSON.toJSON(get(obj)));
+//        LOG.info("-------",get(obj).getClass().getName());
+    }
+    
+    public static <T> T get(Object obj,Class<? extends Object> name) {
+        Class<?> clazz = name;
+        try {
+            if(name.isInstance(obj)){
+                return (T) clazz.cast(obj);
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+        return null;
+    }
+   
+    @Test
+    public void test1() {
+        Person p = new Person();
+        Object obj = p;
+        
+        System.out.println(ObjectTest.get(obj, Person.class).getClass().getName());
+        Person person = ObjectTest.get(obj, Person.class);
+        System.out.println(person.getName());
+    }
 }

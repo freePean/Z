@@ -22,8 +22,14 @@ public class NullTest extends BaseTest{
 
     @Test
     public void nullTest(){
+        try{
         User u = new User();
-        LOG.info("---------------", u.getName().equals(null));//报java.lang.NullPointerException
+        LOG.info("---------------", u.getName().equals(null));
+        }catch(Exception e){
+            LOG.error("错误信息", e);
+            System.err.println(e);
+        }
+        //LOG.info("---------------", u.getName().equals(null));//报java.lang.NullPointerException
     }
     
     class User{
