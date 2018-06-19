@@ -5,7 +5,7 @@ import java.util.TreeMap;
 
 public enum ChainEnum {
 
-    A(1, A.class), B(2, B.class), C(3, C.class), D(4, D.class);
+    A(1, A.class), B(2, B.class), C(3, C.class), D(4, D.class), E(5, E.class);
 
     private ChainEnum(int code, Class<?> clazz) {
         // TODO Auto-generated constructor stub

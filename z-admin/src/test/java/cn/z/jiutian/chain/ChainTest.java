@@ -8,6 +8,7 @@ import java.util.TreeMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
+import com.alibaba.fastjson.JSON;
 import com.sun.javafx.collections.MappingChange.Map;
 
 import cn.z.jiutian.BaseTest;
@@ -22,9 +23,10 @@ public class ChainTest extends BaseTest{
         orderService.execute();
     }
 
+    @SuppressWarnings("unchecked")
     @Test
     public void moveChainTest(){
-        List<Object> lists = getObject(3);
+        List<Object> lists = getObject(2);
         OrderVo param = new OrderVo();
         
         Chain<OrderVo> chain = null;
@@ -37,6 +39,7 @@ public class ChainTest extends BaseTest{
                 chain.setNext(nextChain);
             }
         }
+        LOG.info(" Chain :", JSON.toJSON(chain));
         chain = (Chain<OrderVo>) lists.get(0);
         
         chain.next(param);

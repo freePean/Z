@@ -12,4 +12,13 @@ public class AbstractTest extends BaseTest {
         registry.registry();
     }
 
+    @Test
+    public void carTest(){
+        Car car = null;
+        
+        car = new BaoMaCar();
+        car = new BenChiCar();
+        
+        car.move();
+    }
 }
