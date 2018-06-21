@@ -48,7 +48,8 @@ public class ChainTest extends BaseTest{
     
     public List<Object> getObject(Integer code){
         List<Object> lists = new ArrayList<Object>();
-        java.util.Map<Integer, Class<?>> maps = ChainEnum.getEnums(code);
+        //java.util.Map<Integer, Class<?>> maps = ChainEnum.getEnums(code);
+        java.util.Map<Integer, Class<?>> maps = SyncChain.getEnums(code);
         
         for(Entry<Integer, Class<?>> entry: maps.entrySet()){
             try {
