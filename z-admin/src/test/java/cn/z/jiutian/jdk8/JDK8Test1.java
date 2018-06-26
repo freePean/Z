@@ -1,5 +1,6 @@
 package cn.z.jiutian.jdk8;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,4 +40,11 @@ public class JDK8Test1 extends BaseTest {
 //        System.out.println(lists);
 //    }
     
+    @Test
+    public void longTest(){
+        long MAX_VALUE = 0x7fffffffffffffffL;
+        System.out.println(MAX_VALUE);
+        BigDecimal ba = new BigDecimal(String.valueOf(MAX_VALUE));
+        System.out.println(ba.longValue());
+    }
 }
