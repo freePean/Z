@@ -47,4 +47,16 @@ public class JDK8Test1 extends BaseTest {
         BigDecimal ba = new BigDecimal(String.valueOf(MAX_VALUE));
         System.out.println(ba.longValue());
     }
+    
+    @Test
+    public void whileTest(){
+        int start = 1;
+        boolean flag = false;
+        
+        while( start <= 100){
+            if(flag){
+                start++;
+            }
+        }
+    }
 }

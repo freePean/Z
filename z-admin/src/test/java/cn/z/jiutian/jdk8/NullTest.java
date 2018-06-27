@@ -35,7 +35,15 @@ public class NullTest extends BaseTest{
     class User{
         
         private String name;
-
+        
+        public User(){
+            
+        }
+        
+        public User(String name){
+            this.name = name;
+        }
+        
         public String getName() {
             return name;
         }
@@ -67,5 +75,24 @@ public class NullTest extends BaseTest{
         User u = new User();
         System.out.println(StringUtils.isBlank(u.getName()));
         
+    }
+    
+    @Test
+    public void testTest3(){
+        User u = new User();
+        equals(u.getName());
+        System.out.println("----------------------");
+        
+    }
+    
+    private void equals(String name){
+        try {
+            if(!name.equals(null)){
+                System.out.println("22");
+            }
+                
+          } finally{
+              System.out.println("-------finally-----");
+          }
     }
 }
