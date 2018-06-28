@@ -95,4 +95,12 @@ public class NullTest extends BaseTest{
               System.out.println("-------finally-----");
           }
     }
+    
+    @Test
+    public void integerTest(){
+        Integer a = 128;
+        Integer b = 128;
+        
+        System.out.println(a==b);
+    }
 }
