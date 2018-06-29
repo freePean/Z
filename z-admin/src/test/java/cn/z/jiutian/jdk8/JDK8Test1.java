@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
@@ -57,6 +58,15 @@ public class JDK8Test1 extends BaseTest {
             if(flag){
                 start++;
             }
+        }
+    }
+    
+    @Test
+    public void stringUtilsTest(){
+        if(StringUtils.containsIgnoreCase("12", "3")){
+            System.out.println("----1-------");
+        }else{
+            System.out.println("----2-------");
         }
     }
 }
