@@ -68,7 +68,7 @@
 	   <url-pattern>/*</url-pattern>
 	</filter-mapping>
 	
-     <!-- <filter>
+<!--     <filter>
 	    <filter-name>InvalidCharacterFilter</filter-name>
 	    <filter-class>cn.z.jiutian.filter.InvalidCharacterFilter</filter-class>
 	</filter>
@@ -76,9 +76,9 @@
 	<filter-mapping>
          <filter-name>InvalidCharacterFilter</filter-name>
          <url-pattern>/*</url-pattern>	
-	</filter-mapping>  --> 
+	</filter-mapping> -->
 	
-	 <filter>
+    <filter>
 	    <filter-name>SelDefineInvalidCharacterFilter</filter-name>
 	    <filter-class>cn.z.jiutian.filter.SelDefineInvalidCharacterFilter</filter-class>
 	</filter>
@@ -86,6 +86,6 @@
 	<filter-mapping>
 	     <filter-name>SelDefineInvalidCharacterFilter</filter-name>
 	     <url-pattern>/*</url-pattern>
-	</filter-mapping> 
+	</filter-mapping>  
 
 </web-app>
