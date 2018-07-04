@@ -15,6 +15,9 @@
 		(1)自动注册DefaultAnootationHandlerMapping,AnotationMethodHandlerAdapter 
 		(2)提供一些列：数据绑定，数字和日期的format @NumberFormat, @DateTimeFormat, xml,json默认读写支持 
 	-->
+	
+	<!-- 4.扫描web相关的bean -->
+	<context:component-scan base-package="cn.z.jiuitan"/>
 	<mvc:annotation-driven />
 	
 	<!-- 2.静态资源默认servlet配置
@@ -30,6 +33,15 @@
 	 	<property name="suffix" value=".jsp" />
 	 </bean>
 	 
-	 <!-- 4.扫描web相关的bean -->
-	 <context:component-scan base-package="cn.z.jiutian.*" />
+	 <mvc:interceptors>
+	    <!-- 对所有请求都拦截，公共拦截器可以有多个 -->
+		<bean name="baseInterceptor" class="cn.z.jiutian.interceptor.BaseInterceptor" />
+		<!-- <bean name="testInterceptor" class="cn.z.jiutian.interceptor.TestInterceptor" /> -->
+		<mvc:interceptor>		
+			<!-- 对/test.html进行拦截 -->
+			<mvc:mapping path="/test.html"/>
+			<!-- 特定请求的拦截器只能有一个 -->
+			<bean class="cn.z.jiutian.interceptor.TestInterceptor" />
+		</mvc:interceptor>
+	 </mvc:interceptors>
 </beans>
