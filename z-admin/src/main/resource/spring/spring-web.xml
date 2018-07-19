@@ -48,4 +48,5 @@
 		</mvc:interceptor>
 	 </mvc:interceptors>
 	 
+	 <import resource="classpath:spring/z-activemq.xml"/>
 </beans>
