@@ -3,9 +3,11 @@ package cn.z.jiutian.mq.sender;
 import javax.jms.Destination;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import cn.z.jiutian.mq.MessageSender;
 
+@Service
 public class DemoSender extends MessageSender{
 
     @Autowired
