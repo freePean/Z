@@ -8,7 +8,6 @@ Servers/
 *.tmp
 *.bak
 *.swp
-*.class
 *~.nib
 local.properties
 .settings/
