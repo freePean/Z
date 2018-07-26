@@ -9,6 +9,6 @@ public class HelloJni {
     }
     
     public static void main(String[] args) {
-        new HelloJni();
+        //new HelloJni();
     }
 }
