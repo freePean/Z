@@ -1,4 +1,4 @@
-package cn.z.jiutian.io;
+package cn.z.jiutian.nio;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -8,6 +8,9 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
+/*
+ * http://www.importnew.com/19816.html
+ */
 public class NIOJava {
 
     //io模式
@@ -64,6 +67,6 @@ public class NIOJava {
     }
     
     public static void main(String[] args) {
-        method1();
+        method2();
     }
 }
