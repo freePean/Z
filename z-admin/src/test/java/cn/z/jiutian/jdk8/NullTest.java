@@ -32,6 +32,15 @@ public class NullTest extends BaseTest{
         //LOG.info("---------------", u.getName().equals(null));//报java.lang.NullPointerException
     }
     
+    @Test
+    public void test1(){
+        String str = null;
+        
+        if(str == null){
+            System.out.println("------------");
+        }
+    }
+    
     class User{
         
         private String name;
