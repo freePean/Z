@@ -1,4 +1,4 @@
-package cn.z.jiutian.io;
+package cn.z.jiutian.nio;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
