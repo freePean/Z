@@ -7,7 +7,9 @@ import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-
+/*
+ * https://blog.csdn.net/u013256816/article/details/51457215#comments
+ */
 public class NIOJava {
 
     //io模式
