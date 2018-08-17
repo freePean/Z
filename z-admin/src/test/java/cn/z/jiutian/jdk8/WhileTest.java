@@ -18,4 +18,3 @@ public class WhileTest extends BaseTest {
     }
     
 }
-s
