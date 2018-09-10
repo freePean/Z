@@ -13,6 +13,6 @@ public class FileEncodeConverter {
           File sourceDirectory = new File(sourcePath);
           File destDirectory = new File(destPath);
 
-          if(!sourceDirectory.isDir)
+//          if(!sourceDirectory.isDir)
     }
 }
