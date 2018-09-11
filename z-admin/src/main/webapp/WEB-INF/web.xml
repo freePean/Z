@@ -105,4 +105,21 @@
         <filter-name>testFilter2</filter-name>  
         <url-pattern>/*</url-pattern>  
     </filter-mapping> 
+    
+    <servlet>  
+      <servlet-name>doFormServlet</servlet-name>  
+      <servlet-class>cn.z.jiutian.servlet.DoFormServlet</servlet-class>  
+    </servlet>
+    <servlet>
+       <servlet-name>formServlet</servlet-name>
+       <servlet-class>cn.z.jiutian.servlet.FormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>doFormServlet</servlet-name>
+       <url-pattern>/servlet/DoFormServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+       <servlet-name>formServlet</servlet-name>
+       <url-pattern>/servlet/formServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
