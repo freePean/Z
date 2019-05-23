@@ -22,11 +22,11 @@
          <input type="submit" value="提交" id="submit">
      </form> --%>
      
-     <form action="${pageContext.request.contextPath}/servlet/DoFormServlet" method="post">
-         <%--使用EL表达式取出存储在session中的token--%>
+<%--      <form action="${pageContext.request.contextPath}/servlet/DoFormServlet" method="post">
+         使用EL表达式取出存储在session中的token
          <input type="hidden" name="token" value="${token}"/> 
          用户名：<input type="text" name="username"> 
          <input type="submit" value="提交">
-     </form>
+     </form> --%>
    </body>
  </html>
