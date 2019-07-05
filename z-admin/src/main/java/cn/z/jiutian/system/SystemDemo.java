@@ -1,12 +1,8 @@
 package cn.z.jiutian.system;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SystemDemo {
 
@@ -66,4 +62,14 @@ public class SystemDemo {
 //    public static void main(String[] args) {
 //        
 //    }
+	
+	public static void main(String[] args) {
+		BigDecimal b = new BigDecimal(10);
+		b = b.add(new BigDecimal(20));
+		String str = "abc";
+		System.out.println(b.toString());
+		
+		
+		List<String> lists = new ArrayList<String>();
+	}
 }

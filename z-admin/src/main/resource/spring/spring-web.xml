@@ -41,8 +41,8 @@
 	 	<property name="suffix" value=".jsp" />
 	 </bean>
 	 
-	 <!-- <bean id="beanService" class="cn.z.jiuitan.bean.BeanServiceImpl">
-	 </bean> -->
+	 <bean id="beanService" class="cn.z.jiuitan.bean.BeanServiceImpl">
+	 </bean> 
 	 
 	 <mvc:interceptors>
 	    <!-- 对所有请求都拦截，公共拦截器可以有多个 -->
