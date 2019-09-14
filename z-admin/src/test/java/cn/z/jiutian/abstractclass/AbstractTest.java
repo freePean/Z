@@ -6,7 +6,7 @@ import cn.z.jiutian.BaseTest;
 
 public class AbstractTest extends BaseTest {
 
-    @Test
+    /*@Test
     public void abstractTest(){
         Registry registry = new FullRegistry();
         registry.registry();
@@ -20,5 +20,5 @@ public class AbstractTest extends BaseTest {
         car = new BenChiCar();
         
         car.move();
-    }
+    }*/
 }

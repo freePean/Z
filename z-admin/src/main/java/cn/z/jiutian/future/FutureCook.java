@@ -14,7 +14,7 @@ public class FutureCook {
 			public Chuju call() throws Exception {
 				System.out.println("第一步：下单");
 				System.out.println("第一步：等待送货");
-				Thread.sleep(5000);
+				Thread.sleep(10000);
 				System.out.println("第一步：快递送到");
 				return new Chuju();
 			}
@@ -27,7 +27,7 @@ public class FutureCook {
 		Shicai shicai = new Shicai();
 		System.out.println("第二步：食材到位");
 		
-		if(!task.isDone()){
+		if(task.isDone()){
 			System.out.println("第三步：厨具还没到，心情好就等待（心情不好就调用cancel方法取消订单）");
 		}
 		
